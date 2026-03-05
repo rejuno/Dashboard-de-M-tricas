@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Link do Deploy: [Insira aqui o link da Vercel]
+# 📊 Dashboard de Métricas - Desafio Técnico
 
-## Getting Started
+Este projeto é um Dashboard de Métricas desenvolvido como parte de um desafio técnico para demonstrar proficiência em **React**, **Next.js (App Router)** e **TypeScript**. A aplicação consome uma API simulada interna para exibir indicadores de performance e gerenciamento de campanhas de marketing.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Stack Utilizada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (Tipagem forte em 100% do código)
+* **Estilização:** [TailwindCSS](https://tailwindcss.com/)
+* **Gráficos:** [Recharts](https://recharts.org/)
+* **Gerenciamento de Estado:** Hooks nativos (`useState`, `useEffect`, `useMemo`)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Funcionalidades (MVP)
 
-## Learn More
+### 1. Mock de Dados (API Route)
+Implementação de uma rota de API interna em `app/api/data/route.ts` que retorna um JSON estático simulando uma resposta de backend.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Visão Geral (Dashboard)
+-   **Cards de Métricas:** Exibição visual de Total de Clientes, Receita Mensal e Taxa de Conversão.
+-   **Gráfico de Investimento:** Gráfico de barras/linhas mostrando o investimento das campanhas por canal de aquisição.
+-   **Loading States:** Feedback visual (Skeleton Screen ou Spinner) enquanto os dados são "buscados" na API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Tabela e Filtros
+-   Listagem dinâmica de campanhas (Nome, Canal, Status, Investimento).
+-   Filtro funcional por **Status** (Ativa/Pausada) utilizando estado local.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Extras adicionados
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   [X] Layout responsivo
+-   [X] Dark e white mode
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
