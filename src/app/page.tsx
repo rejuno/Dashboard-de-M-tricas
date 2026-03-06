@@ -114,7 +114,10 @@ export default function DashboardPage() {
                 }}
                 labelStyle={{ color: isDark ? '#ffffff' : '#1e293b', fontWeight: 'bold' }}
                 itemStyle={{ color: isDark ? '#ffffff' : '#1e293b' }}
-                formatter={(value: number | string) => [`R$ ${Number(value).toLocaleString('pt-BR')}`, 'Investimento']}
+                formatter={(value: number | string | undefined) => {
+                if (value === undefined) return ['', 'Investimento'];
+                return [`R$ ${Number(value).toLocaleString('pt-BR')}`, 'Investimento'];
+              }}
               />
               
               <Bar 
