@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 
-export default function Header({ isDark, setIsDark }) {
+interface HeaderProps {
+  isDark: boolean;
+  setIsDark: (value: boolean) => void;
+}
+
+export default function Header({ isDark, setIsDark }: HeaderProps) {
   
   useEffect(() => {
     const root = window.document.documentElement;
