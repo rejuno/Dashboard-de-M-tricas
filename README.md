@@ -5,6 +5,17 @@ Este projeto é um Dashboard de Métricas desenvolvido como parte de um desafio 
 
 ---
 
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/rejuno/Dashboard-de-M-tricas.git
+
+# 2. Instalar as dependências
+npm install
+
+# 3. Iniciar o servidor de desenvolvimento
+npm run dev
+```
+
 ## 🛠️ Stack Utilizada
 
 * **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
