@@ -7,9 +7,10 @@ interface CampaignTableProps {
   campaigns: Campaign[];
   currentFilter: string;
   onFilterChange: (status: CampaignStatus | 'Todas') => void;
+  isDark: boolean;
 }
 
-export const CampaignTable = ({ campaigns, currentFilter, onFilterChange }: CampaignTableProps) => {
+export const CampaignTable = ({ campaigns, currentFilter, onFilterChange, isDark }: CampaignTableProps) => {
   // 1. Estados da paginação
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -56,7 +57,7 @@ export const CampaignTable = ({ campaigns, currentFilter, onFilterChange }: Camp
           </thead>
           <tbody className="divide-y divide-gray-100">
             {currentItems.map((c) => (
-              <tr key={c.id} className="text-sm">
+              <tr key={c.id} className="text-sm transition-colors">
                 <td className="px-6 py-4 font-medium text-second">{c.name}</td>
                 <td className="px-6 py-4 text-gray-600 text-second">{c.channel}</td>
                 <td className="px-6 py-4">
