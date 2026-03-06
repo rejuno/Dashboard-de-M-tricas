@@ -1,4 +1,4 @@
-# Link do Deploy: [Insira aqui o link da Vercel]
+# Link do Deploy: [https://dashboard-de-m-tricas-d7lw.vercel.app](https://dashboard-de-m-tricas-d7lw.vercel.app)
 # 📊 Dashboard de Métricas - Desafio Técnico
 
 Este projeto é um Dashboard de Métricas desenvolvido como parte de um desafio técnico para demonstrar proficiência em **React**, **Next.js (App Router)** e **TypeScript**. A aplicação consome uma API simulada interna para exibir indicadores de performance e gerenciamento de campanhas de marketing.
